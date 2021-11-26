@@ -136,7 +136,6 @@ gsap.registerPlugin(ScrollTrigger);
           {
             namespace: "agentur",
             beforeEnter() {
-              curtainsAg.clear();
 
             },
 
