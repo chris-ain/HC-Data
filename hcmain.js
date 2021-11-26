@@ -18,6 +18,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 //MAIN//
 
+import { chessScene, id } from "./chess.js";
+import { curtainsmain, curtains } from "./curtainsmain.js";
+import { projekte, curtainsProj } from "./projekte.js";
+import { intro } from "./intro.js";
+import {
+  curtainsAg,
+  pl,
+  curtainsgenturfunc,
+} from "./curtainsagentur.js";
+import { curtainsProjDet, curtainsDet } from "./curtainsdet.js";
+import { curtainsproundermain, curtainsprounder } from "./curtainprounder.js";
+//INTRO//
+gsap.registerPlugin(ScrollTrigger);
+
+//MAIN//
+
 
   function init() {
     var imagesLoaded = 0;
@@ -326,25 +342,25 @@ gsap.registerPlugin(ScrollTrigger);
         scrollbar[0].remove();
       }
      
-      let pinWrap = document.querySelector(".pin-wrap");
-      let pinWrapWidth = pinWrap.offsetWidth;
-      let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+      // let pinWrap = document.querySelector(".pin-wrap");
+      // let pinWrapWidth = pinWrap.offsetWidth;
+      // let horizontalScrollLength = pinWrapWidth - window.innerWidth;
     
-      // Pinning and horizontal scrolling
+      // // Pinning and horizontal scrolling
     
-      gsap.to(".pin-wrap", {
-        scrollTrigger: {
-          scroller: (".smooth-scroll"), //locomotive-scroll
-          scrub: true,
-          trigger: "#sectionPin",
-          pin: true,
-          anticipatePin: 1,
-          start: "top top",
-          end: pinWrapWidth
-        },
-        x: -horizontalScrollLength,
-        ease: "none"
-      });
+      // gsap.to(".pin-wrap", {
+      //   scrollTrigger: {
+      //     scroller: (".smooth-scroll"), //locomotive-scroll
+      //     scrub: true,
+      //     trigger: "#sectionPin",
+      //     pin: true,
+      //     anticipatePin: 1,
+      //     start: "top top",
+      //     end: pinWrapWidth
+      //   },
+      //   x: -horizontalScrollLength,
+      //   ease: "none"
+      // });
 
           
 
@@ -421,8 +437,6 @@ gsap.registerPlugin(ScrollTrigger);
   }
 
   $(document).ready(function () {
-
-
   init();
 
   });
