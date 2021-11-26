@@ -13,26 +13,7 @@ import { curtainsproundermain, curtainsprounder } from "https://cdn.statically.i
 //INTRO//
 gsap.registerPlugin(ScrollTrigger);
 
-//MAIN//
-gsap.registerPlugin(ScrollTrigger);
 
-//MAIN//
-
-import { chessScene, id } from "./chess.js";
-import { curtainsmain, curtains } from "./curtainsmain.js";
-import { projekte, curtainsProj } from "./projekte.js";
-import { intro } from "./intro.js";
-import {
-  curtainsAg,
-  pl,
-  curtainsgenturfunc,
-} from "./curtainsagentur.js";
-import { curtainsProjDet, curtainsDet } from "./curtainsdet.js";
-import { curtainsproundermain, curtainsprounder } from "./curtainprounder.js";
-//INTRO//
-gsap.registerPlugin(ScrollTrigger);
-
-//MAIN//
 
 
   function init() {
