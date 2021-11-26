@@ -14,6 +14,9 @@ import { curtainsproundermain, curtainsprounder } from "https://cdn.statically.i
 gsap.registerPlugin(ScrollTrigger);
 
 //MAIN//
+gsap.registerPlugin(ScrollTrigger);
+
+//MAIN//
 
 
   function init() {
@@ -324,7 +327,25 @@ gsap.registerPlugin(ScrollTrigger);
         scrollbar[0].remove();
       }
      
-
+      let pinWrap = document.querySelector(".pin-wrap");
+      let pinWrapWidth = pinWrap.offsetWidth;
+      let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+    
+      // Pinning and horizontal scrolling
+    
+      gsap.to(".pin-wrap", {
+        scrollTrigger: {
+          scroller: (".smooth-scroll"), //locomotive-scroll
+          scrub: true,
+          trigger: "#sectionPin",
+          pin: true,
+          anticipatePin: 1,
+          start: "top top",
+          end: pinWrapWidth
+        },
+        x: -horizontalScrollLength,
+        ease: "none"
+      });
 
           
 
@@ -406,3 +427,6 @@ gsap.registerPlugin(ScrollTrigger);
   init();
 
   });
+
+
+
