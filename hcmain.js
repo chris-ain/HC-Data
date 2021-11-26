@@ -1,5 +1,5 @@
 
-import { chessScene, id } from "https://cdn.statically.io/gh/chris-ain/HC-Data/main/chess.js";
+import { chessScene, id } from "https://cdn.statically.io/gh/chris-ain/HC-Data/main/chess2.js";
 import { curtainsmain, curtains } from "https://cdn.statically.io/gh/chris-ain/Handle-Creativ-Webpage/main/curtainsmain.js";
 import { projekte, curtainsProj } from "https://cdn.statically.io/gh/chris-ain/Handle-Creativ-Webpage/main/projekte.js";
 import { intro } from "https://cdn.statically.io/gh/chris-ain/Handle-Creativ-Webpage/main/intro.js";
