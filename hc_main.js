@@ -407,17 +407,3 @@ gsap.registerPlugin(ScrollTrigger);
   init();
 
   });
-
-
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
