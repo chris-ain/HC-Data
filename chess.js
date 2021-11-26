@@ -26,7 +26,7 @@ export function chessScene(smoothScroll) {
 
     //===================================================== scene
     scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2( 0xf7f7f7, 0.005 );
+    scene.fog = new THREE.FogExp2( 0x741111,.1, 100 );
 
     // ////
     // const paramsts = {
@@ -527,30 +527,30 @@ function createAnimation(mixer, action, clip) {
 
 
 
-  let scrollingTL5 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".smooth-scroll",
-      scroller: ".smooth-scroll",
-      start: "top top",
-      endtrigger: "#sticky_logo_section",
-      pin: true,
-      scrub: true,
-        ease: Power3.easeInOut,
-onUpdate: function () {
-        camera.updateProjectionMatrix();
-      }
-    }
-  }, );
+//   let scrollingTL5 = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".smooth-scroll",
+//       scroller: ".smooth-scroll",
+//       start: "top top",
+//       endtrigger: "#intro",
+//       pin: true,
+//       scrub: true,
+//         ease: Power3.easeInOut,
+// onUpdate: function () {
+//         camera.updateProjectionMatrix();
+//       }
+//     }
+//   }, );
 
   
 
-    scrollingTL5.to('#chess', {
- 
-    opacity:0,
+//     scrollingTL5.to('.hero_head', {
+//       scale:0,
+//     opacity:0,
 
-  });
+//   });
 
-  $(gui.domElement).attr("hidden", true);
+  // $(gui.domElement).attr("hidden", true);
 
 
 }
